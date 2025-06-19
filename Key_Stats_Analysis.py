@@ -74,7 +74,7 @@ df = pd.read_csv("key_stats.csv")
 st.write(df["distance_covered"].describe())
 
 st.markdown("### HISTOGRAM REPRESENTATION FOR PLAYERS NAME")
-NAME = px.pie(df["player_name"], y= "player_name", title="NAME OF PLAYERS")
+NAME = px.bar_polar(df["player_name"], y= "player_name", title="NAME OF PLAYERS")
 st.plotly_chart(NAME, use_container_width=True)
 
 st.markdown("### LINE GRAPH REPRESENTATION FOR PLAYERS NAME")
