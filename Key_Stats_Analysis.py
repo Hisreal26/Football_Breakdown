@@ -81,19 +81,19 @@ st.markdown("### LINE GRAPH REPRESENTATION FOR PLAYERS NAME")
 NAME = px.line(df["player_name"], y= "player_name", title="NAME OF PLAYERS")
 st.plotly_chart(NAME, use_container_width=True)
 
-st.markdown("### LINE GRAPH REPRESENTATION FOR GOALS")
-GOAL = px.bar(df["club"], y= "club", title="Goals Distribution")
+st.markdown("### LINE GRAPH REPRESENTATION FOR CLUB")
+GOAL = px.bar(df["club"], y= "club", title="CLUBS NAME")
 st.plotly_chart(GOAL, use_container_width=True)
 
 st.markdown("### BAR REPRESENTATION FOR POSITION")
 POSITION = px.bar(df["position"], y= "position", title="POSITION PLAYED")
 st.plotly_chart(POSITION, use_container_width=True)
 
-"""
 st.markdown("### HISTOGRAM REPRESENTATION FOR PREGNANCIES")
-Pregg = px.histogram(df["Pregnancies"], y ="Pregnancies", title = "Pregnancies Distribution")
+Pregg = px.histogram(df["distance_covered"], y ="distance_covered", title = "Pregnancies Distribution")
 st.plotly_chart(Pregg, use_container_width = True)
 
+"""
 st.markdown("### LINE GRAPH REPRESENTATION FOR PREGNANCIES")
 Pregg = px.line(df["Pregnancies"], y ="Pregnancies", title = "Pregnancies Distribution")
 st.plotly_chart(Pregg, use_container_width = True)
