@@ -24,13 +24,13 @@ st.markdown("### DATA INFO")
 AK = df.shape
 st.write(AK)
 
+st.markdown("### PLAYERS NAME")
+st.write(df["player_name"].describe())
+
+st.markdown("### FIRST FIVE PLAYERS NAME")
+st.write(df["player_name"].head())
+
 """
-st.markdown("### BLOOD PRESSURE")
-st.write(df["BloodPressure"].describe())
-
-st.markdown("### FIRST TEN BLOOD PRESSURE")
-st.write(df["BloodPressure"].head(10))
-
 #UNIVARIATE ANALYSIS
 st.markdown("### UNIVARIATE ANALYSIS")
 st.markdown("### BLOOD PRESSURE ANALYSIS")
