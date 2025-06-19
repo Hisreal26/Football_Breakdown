@@ -74,7 +74,7 @@ df = pd.read_csv("key_stats.csv")
 st.write(df["distance_covered"].describe())
 
 st.markdown("### SCATTER PLOTS FOR PLAYERS NAME")
-NAME = px.scatter(df["player_name"], y= "player_name", title="NAME OF PLAYERS")
+NAME = px.scatter(df["position"], y= "position", title="NAME OF PLAYERS")
 st.plotly_chart(NAME, use_container_width=True)
 
 st.markdown("### LINE GRAPH REPRESENTATION FOR PLAYERS NAME")
@@ -85,9 +85,9 @@ st.markdown("### LINE GRAPH REPRESENTATION FOR GOALS")
 GOAL = px.line(df["match_played"], y= "match_played", title="Goals Distribution")
 st.plotly_chart(GOAL, use_container_width=True)
 
-st.markdown("### BAR REPRESENTATION FOR GOALS")
-GOALS = px.bar(df["position"], y= "position", title="Goals Distribution")
-st.plotly_chart(GOALS, use_container_width=True)
+st.markdown("### BAR REPRESENTATION FOR POSITION")
+POSITION = px.bar(df["position"], y= "position", title="POSITION PLAYED")
+st.plotly_chart(POSITION, use_container_width=True)
 
 """
 st.markdown("### HISTOGRAM REPRESENTATION FOR PREGNANCIES")
