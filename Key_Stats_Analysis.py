@@ -24,10 +24,6 @@ st.markdown("### DATA INFO")
 AK = df.shape
 st.write(AK)
 
-st.markdown("### CORRELATION")
-correlation = df.corr()
-st.write(correlation)
-
 """
 st.markdown("### BLOOD PRESSURE")
 st.write(df["BloodPressure"].describe())
