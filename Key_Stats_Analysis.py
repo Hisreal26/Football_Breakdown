@@ -13,21 +13,20 @@ st.markdown("## OVERVIEW")
 
 #import my csv file
 st.markdown("### FIRST FIVE OBSERVATIONS")
-df = pd.read_csv("key_Stats_Analysis.csv")
+df = pd.read_csv("key_stats.csv")
 st.write(df.head())
 
 st.markdown("### LAST FIVE OBSERVATIONS")
-df = pd.read_csv("key_Stats_Analysis.csv")
+df = pd.read_csv("key_stats.csv")
 st.write(df.tail())
 
 st.markdown("### DATA INFO")
-KS = df.shape
-st.write(KS)
+AK = df.shape
+st.write(AK)
 
 st.markdown("### CORRELATION")
 correlation = df.corr()
 st.write(correlation)
-
 
 """
 st.markdown("### BLOOD PRESSURE")
@@ -39,27 +38,27 @@ st.write(df["BloodPressure"].head(10))
 #UNIVARIATE ANALYSIS
 st.markdown("### UNIVARIATE ANALYSIS")
 st.markdown("### BLOOD PRESSURE ANALYSIS")
-df = pd.read_csv("key_Stats_Analysis.csv")
+df = pd.read_csv("key_stats.csv")
 st.write(df["BloodPressure"].describe())
 
 st.markdown("### BODY MASS INDEX ANALYSIS")
-df = pd.read_csv("key_Stats_Analysis.csv")
+df = pd.read_csv("key_stats.csv")
 st.write(df["BMI"].describe())
 
 st.markdown("### PREGNANCIES ANALYSIS")
-df = pd.read_csv("key_Stats_Analysis.csv")
+df = pd.read_csv("key_stats.csv")
 st.write(df["Pregnancies"].describe())
 
 st.markdown("### SKIN THICKNESS ANALYSIS")
-df = pd.read_csv("key_Stats_Analysis.csv")
+df = pd.read_csv("key_stats.csv")
 st.write(df["SkinThickness"].describe())
 
 st.markdown("### GLUCOSE ANALYSIS")
-df = pd.read_csv("key_Stats_Analysis.csv")
+df = pd.read_csv("key_stats.csv")
 st.write(df["Glucose"].describe())
 
 st.markdown("### INSULIN ANALYSIS")
-df = pd.read_csv("key_Stats_Analysis.csv")
+df = pd.read_csv("key_stats.csv")
 st.write(df["Insulin"].describe())
 
 st.markdown("### HISTOGRAM REPRESENTATION FOR BP")
