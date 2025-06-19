@@ -42,6 +42,7 @@ st.write(df["minutes_played"].describe())
 st.markdown("### MATCH PLAYED BY PLAYER")
 st.write(df["match_played"].describe())
 
+
 #UNIVARIATE ANALYSIS
 st.markdown("### FOOTBALL UNIVARIATE ANALYSIS")
 st.markdown("### MINUTES PLAYED ANALYSIS")
