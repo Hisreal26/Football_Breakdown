@@ -42,45 +42,49 @@ st.write(df["minutes_played"].describe())
 st.markdown("### MATCH PLAYED BY PLAYER")
 st.write(df["match_played"].describe())
 
-"""
 #UNIVARIATE ANALYSIS
-st.markdown("### UNIVARIATE ANALYSIS")
-st.markdown("### BLOOD PRESSURE ANALYSIS")
+st.markdown("### FOOTBALL UNIVARIATE ANALYSIS")
+st.markdown("### MINUTES PLAYED ANALYSIS")
 df = pd.read_csv("key_stats.csv")
-st.write(df["BloodPressure"].describe())
+st.write(df["match_played"].describe())
 
-st.markdown("### BODY MASS INDEX ANALYSIS")
+st.markdown("### CLUB ANALYSIS")
 df = pd.read_csv("key_stats.csv")
-st.write(df["BMI"].describe())
+st.write(df["club"].describe())
 
-st.markdown("### PREGNANCIES ANALYSIS")
+st.markdown("### POSITION ANALYSIS")
 df = pd.read_csv("key_stats.csv")
-st.write(df["Pregnancies"].describe())
+st.write(df["position"].describe())
 
-st.markdown("### SKIN THICKNESS ANALYSIS")
+st.markdown("### MINUTES PLAYED ANALYSIS")
 df = pd.read_csv("key_stats.csv")
-st.write(df["SkinThickness"].describe())
+st.write(df["minutes_played"].describe())
 
-st.markdown("### GLUCOSE ANALYSIS")
+st.markdown("### GOALS ANALYSIS")
 df = pd.read_csv("key_stats.csv")
-st.write(df["Glucose"].describe())
+st.write(df["goals"].describe())
 
-st.markdown("### INSULIN ANALYSIS")
+st.markdown("### ASSISTS ANALYSIS")
 df = pd.read_csv("key_stats.csv")
-st.write(df["Insulin"].describe())
+st.write(df["assists"].describe())
 
-st.markdown("### HISTOGRAM REPRESENTATION FOR BP")
-BP = px.histogram(df["BloodPressure"], y= "BloodPressure", title="Pressure Distribution")
-st.plotly_chart(BP, use_container_width=True)
+st.markdown("### DISTANCE COVERED ANALYSIS")
+df = pd.read_csv("key_stats.csv")
+st.write(df["distance_covered"].describe())
 
-st.markdown("### LINE GRAPH REPRESENTATION FOR BP")
-BP = px.line(df["BloodPressure"], y= "BloodPressure", title="Pressure Distribution")
-st.plotly_chart(BP, use_container_width=True)
+st.markdown("### HISTOGRAM REPRESENTATION FOR GOALS")
+GOAL = px.histogram(df["goals"], y= "goals", title="Goals Distribution")
+st.plotly_chart(GOAL, use_container_width=True)
 
-st.markdown("### BAR REPRESENTATION FOR BP")
-BP2 = px.bar(df["BloodPressure"], y= "BloodPressure", title="Pressure Distribution")
-st.plotly_chart(BP2, use_container_width=True)
+st.markdown("### LINE GRAPH REPRESENTATION FOR GOALS")
+GOAL = px.line(df["goals"], y= "goals", title="Goals Distribution")
+st.plotly_chart(GOAL, use_container_width=True)
 
+st.markdown("### BAR REPRESENTATION FOR GOALS")
+GOALS = px.bar(df["goals"], y= "goals", title="Goals Distribution")
+st.plotly_chart(GOALS, use_container_width=True)
+
+"""
 st.markdown("### HISTOGRAM REPRESENTATION FOR PREGNANCIES")
 Pregg = px.histogram(df["Pregnancies"], y ="Pregnancies", title = "Pregnancies Distribution")
 st.plotly_chart(Pregg, use_container_width = True)
