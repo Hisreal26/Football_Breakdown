@@ -90,7 +90,7 @@ POSITION = px.bar(df["position"], y= "position", title="POSITION PLAYED")
 st.plotly_chart(POSITION, use_container_width=True)
 
 st.markdown("### HISTOGRAM REPRESENTATION FOR DISTANCE COVERED")
-ABC = px.histogram(df["distance_covered"], y ="distance_covered", title = "Pregnancies Distribution")
+ABC = px.bar(df["distance_covered"], y ="distance_covered", title = "Pregnancies Distribution")
 st.plotly_chart(ABC, use_container_width = True)
 
 """
