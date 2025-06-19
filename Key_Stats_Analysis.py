@@ -73,24 +73,24 @@ st.markdown("### DISTANCE COVERED ANALYSIS")
 df = pd.read_csv("key_stats.csv")
 st.write(df["distance_covered"].describe())
 
-st.markdown("### SCATTER PLOTS FOR PLAYERS NAME")
-NAME = px.scatter(df["position"], y= "position", title="NAME OF PLAYERS")
+st.markdown("### SCATTER PLOTS FOR POSITION")
+NAME = px.scatter(df["position"], y= "position", title="PLAYERS POSITION")
 st.plotly_chart(NAME, use_container_width=True)
 
 st.markdown("### LINE GRAPH REPRESENTATION FOR PLAYERS NAME")
-NAME = px.line(df["player_name"], y= "player_name", title="NAME OF PLAYERS")
-st.plotly_chart(NAME, use_container_width=True)
+PLAYER = px.line(df["player_name"], y= "player_name", title="NAME OF PLAYERS")
+st.plotly_chart(PLAYER, use_container_width=True)
 
-st.markdown("### LINE GRAPH REPRESENTATION FOR CLUB")
-GOAL = px.bar(df["club"], y= "club", title="CLUBS NAME")
-st.plotly_chart(GOAL, use_container_width=True)
+st.markdown("### BAR GRAPH REPRESENTATION FOR CLUB")
+CLUB = px.bar(df["club"], y= "club", title="CLUBS NAME")
+st.plotly_chart(CLUB, use_container_width=True)
 
 st.markdown("### BAR REPRESENTATION FOR POSITION")
 POSITION = px.bar(df["position"], y= "position", title="POSITION PLAYED")
 st.plotly_chart(POSITION, use_container_width=True)
 
-st.markdown("### HISTOGRAM REPRESENTATION FOR PREGNANCIES")
-Pregg = px.histogram(df["distance_covered"], y ="distance_covered", title = "Pregnancies Distribution")
+st.markdown("### HISTOGRAM REPRESENTATION FOR DISTANCE COVERED")
+Pregg = px.line(df["distance_covered"], y ="distance_covered", title = "Pregnancies Distribution")
 st.plotly_chart(Pregg, use_container_width = True)
 
 """
