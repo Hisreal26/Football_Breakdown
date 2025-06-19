@@ -44,7 +44,7 @@ st.write(df["match_played"].describe())
 
 
 #UNIVARIATE ANALYSIS
-st.markdown("### FOOTBALL UNIVARIATE ANALYSIS")
+st.markdown("# FOOTBALL UNIVARIATE ANALYSIS")
 st.markdown("### MINUTES PLAYED ANALYSIS")
 df = pd.read_csv("key_stats.csv")
 st.write(df["match_played"].describe())
