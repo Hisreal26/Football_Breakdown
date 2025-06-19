@@ -86,7 +86,7 @@ GOAL = px.line(df["match_played"], y= "match_played", title="Goals Distribution"
 st.plotly_chart(GOAL, use_container_width=True)
 
 st.markdown("### BAR REPRESENTATION FOR GOALS")
-GOALS = px.bar(df["goals"], y= "goals", title="Goals Distribution")
+GOALS = px.bar(df["position"], y= "position", title="Goals Distribution")
 st.plotly_chart(GOALS, use_container_width=True)
 
 """
