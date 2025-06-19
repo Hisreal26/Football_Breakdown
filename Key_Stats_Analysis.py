@@ -31,7 +31,7 @@ st.markdown("### FIRST FIVE PLAYERS NAME")
 st.write(df["player_name"].head())
 
 st.markdown("### CLUBS NAME")
-st.write(df["club"].describe(10))
+st.write(df["club"].describe())
 
 st.markdown("### FIRST FIVE CLUB NAME")
 st.write(df["club"].head())
