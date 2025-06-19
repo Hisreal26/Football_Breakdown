@@ -82,7 +82,7 @@ NAME = px.line(df["player_name"], y= "player_name", title="NAME OF PLAYERS")
 st.plotly_chart(NAME, use_container_width=True)
 
 st.markdown("### LINE GRAPH REPRESENTATION FOR GOALS")
-GOAL = px.scatter_3d(df["match_played"], y= "match_played", title="Goals Distribution")
+GOAL = px.scatter_geo(df["match_played"], y= "match_played", title="Goals Distribution")
 st.plotly_chart(GOAL, use_container_width=True)
 
 st.markdown("### BAR REPRESENTATION FOR POSITION")
