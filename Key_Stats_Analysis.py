@@ -30,6 +30,18 @@ st.write(df["player_name"].describe())
 st.markdown("### FIRST FIVE PLAYERS NAME")
 st.write(df["player_name"].head())
 
+st.markdown("### CLUBS NAME")
+st.write(df["club"].describe())
+
+st.markdown("### PLAYERS POSITION")
+st.write(df["position"].describe())
+
+st.markdown("### MINUTES PLAYED BY PLAYER")
+st.write(df["minutes_played"].describe())
+
+st.markdown("### MATCH PLAYED BY PLAYER")
+st.write(df["match_played"].describe())
+
 """
 #UNIVARIATE ANALYSIS
 st.markdown("### UNIVARIATE ANALYSIS")
