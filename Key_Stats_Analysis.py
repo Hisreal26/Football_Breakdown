@@ -21,8 +21,8 @@ df = pd.read_csv("key_stats.csv")
 st.write(df.tail())
 
 st.markdown("### DATA INFO")
-AK = df.shape
-st.write(AK)
+KS = df.shape
+st.write(KS)
 
 st.markdown("### PLAYERS NAME")
 st.write(df["player_name"].describe())
@@ -32,9 +32,6 @@ st.write(df["player_name"].head())
 
 st.markdown("### CLUBS NAME")
 st.write(df["club"].describe())
-
-st.markdown("### FIRST FIVE CLUB NAME")
-st.write(df["club"].head())
 
 st.markdown("### PLAYERS POSITION")
 st.write(df["position"].describe())
