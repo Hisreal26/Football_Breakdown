@@ -77,8 +77,8 @@ st.markdown("### HISTOGRAM REPRESENTATION FOR PLAYERS NAME")
 NAME = px.histogram(df["player_name"], y= "player_name", title="NAME OF PLAYERS")
 st.plotly_chart(NAME, use_container_width=True)
 
-st.markdown("### HISTOGRAM REPRESENTATION FOR PLAYERS NAME")
-NAME = px.bar(df["player_name"], y= "player_name", title="NAME OF PLAYERS")
+st.markdown("### LINE GRAPH REPRESENTATION FOR PLAYERS NAME")
+NAME = px.line(df["player_name"], y= "player_name", title="NAME OF PLAYERS")
 st.plotly_chart(NAME, use_container_width=True)
 
 st.markdown("### LINE GRAPH REPRESENTATION FOR GOALS")
