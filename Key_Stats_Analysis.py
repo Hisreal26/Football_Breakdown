@@ -107,13 +107,12 @@ st.markdown("### PLAYER NAME vs MINUTES PLAYED")
 df2 = pd.DataFrame(df["player_name"],df["minutes_played"])
 st.write(df2)
 
+st.markdown("### Blood Pressure vs BMI")
+df3 = pd.DataFrame(df["club"],df["position"])
+st.write(df3)
 
 
 """
-st.markdown("### Blood Pressure vs BMI")
-df3 = pd.DataFrame(df["BloodPressure"],df["BMI"])
-st.write(df3)
-
 st.markdown("### Glucose vs Pregnancies")
 df4 = pd.DataFrame(df["Glucose"],df["Pregnancies"])
 st.write(df4)
