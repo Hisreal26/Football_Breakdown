@@ -97,6 +97,7 @@ st.markdown("### LINE GRAPH REPRESENTATION FOR ASSISTS")
 ASSIST = px.line(df["assists"], y ="assists", title = "Assist Contributions")
 st.plotly_chart(ASSIST, use_container_width = True)
 
+
 """
 st.markdown("### BAR REPRESENTATION FOR PREGNANCIES")
 Pregg = px.bar(df["Pregnancies"], y ="Pregnancies", title = "Pregnancies Distribution")
