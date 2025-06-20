@@ -101,14 +101,14 @@ st.markdown("### HISTOGRAM REPRESENTATION FOR ASSISTS")
 ASSIST = px.histogram(df["assists"], y ="assists", title = "Assist Contributions")
 st.plotly_chart(ASSIST, use_container_width = True)
 
-
-"""
 #BIVARIATE ANALYSIS
 st.markdown("## BIVARIATE ANALYSIS")
-st.markdown("### Blood Pressure vs Pregnancies")
-df2 = pd.DataFrame(df["BloodPressure"],df["Pregnancies"])
+st.markdown("### PLAYER NAME vs MINUTES PLAYED")
+df2 = pd.DataFrame(df["player_name"],df["minutes_played"])
 st.write(df2)
 
+
+"""
 st.markdown("### Blood Pressure vs BMI")
 df3 = pd.DataFrame(df["BloodPressure"],df["BMI"])
 st.write(df3)
