@@ -114,7 +114,10 @@ st.write(df3)
 st.markdown("### GOALS vs PLAYER NAME")
 df4 = pd.DataFrame(df["goals"],df["player_name"])
 st.write(df4)
-st.write(df[['player_name', 'goals']].isnull().sum())
+
+df = df.dropna(subset=['player_name', 'goals'])  # or
+df['player_name'] = df['player_name'].fillna("Unknown")
+st.write(df)
 
 
 
