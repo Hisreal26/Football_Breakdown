@@ -93,11 +93,11 @@ st.markdown("### HISTOGRAM REPRESENTATION FOR DISTANCE COVERED")
 ABC = px.bar(df["distance_covered"], y ="distance_covered", title = "Pregnancies Distribution")
 st.plotly_chart(ABC, use_container_width = True)
 
-"""
-st.markdown("### LINE GRAPH REPRESENTATION FOR PREGNANCIES")
-Pregg = px.line(df["Pregnancies"], y ="Pregnancies", title = "Pregnancies Distribution")
-st.plotly_chart(Pregg, use_container_width = True)
+st.markdown("### LINE GRAPH REPRESENTATION FOR ASSISTS")
+ASSIST = px.line(df["assists"], y ="assists", title = "Assist Contributions")
+st.plotly_chart(ASSIST, use_container_width = True)
 
+"""
 st.markdown("### BAR REPRESENTATION FOR PREGNANCIES")
 Pregg = px.bar(df["Pregnancies"], y ="Pregnancies", title = "Pregnancies Distribution")
 st.plotly_chart(Pregg, use_container_width = True)
