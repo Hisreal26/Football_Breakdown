@@ -111,12 +111,29 @@ st.markdown("### CLUB vs POSITION")
 df3 = pd.DataFrame(df["club"],df["position"])
 st.write(df3)
 
-
-"""
-st.markdown("### Glucose vs Pregnancies")
-df4 = pd.DataFrame(df["Glucose"],df["Pregnancies"])
+st.markdown("### GOALS vs PLAYER NAME")
+df4 = pd.DataFrame(df["goals"],df["player_name"])
 st.write(df4)
 
+
+"""
+st.markdown("# PREDICTIVE ANALYSIS")
+X = df.drop("Outcome", axis=1)
+Y = df["Outcome"]
+X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.2)
+
+model = LogisticRegression()
+model.fit(X_train,Y_train) #training the model
+
+st.markdown("## Outcome Prediction")
+prediction = model.predict(X_test)
+st.write(prediction)
+
+st.markdown("## Model Evaluation")
+accuracy = accuracy_score(prediction, Y_test)
+st.write(accuracy)
+
+"""
 st.markdown("### Skin Thickness vs Pregnancies")
 df5 = pd.DataFrame(df["SkinThickness"],df["Pregnancies"])
 st.write(df5)
