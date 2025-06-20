@@ -108,6 +108,7 @@ df2 = pd.DataFrame(df["player_name"],df["minutes_played"])
 st.write(df2)
 
 
+
 """
 st.markdown("### Blood Pressure vs BMI")
 df3 = pd.DataFrame(df["BloodPressure"],df["BMI"])
