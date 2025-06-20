@@ -135,7 +135,6 @@ st.markdown("## Model Evaluation")
 accuracy = accuracy_score(prediction, Y_test)
 st.write(accuracy)
 
-"""
 st.markdown("### Skin Thickness vs Pregnancies")
 df5 = pd.DataFrame(df["SkinThickness"],df["Pregnancies"])
 st.write(df5)
