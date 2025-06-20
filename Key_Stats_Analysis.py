@@ -114,7 +114,7 @@ st.write(df3)
 st.markdown("### GOALS vs PLAYER NAME")
 df4 = pd.DataFrame(df["goals"],df["player_name"])
 st.write(df4)
-
+st.write(df[['player_name', 'goals']].isnull().sum())
 
 
 
