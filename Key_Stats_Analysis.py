@@ -89,6 +89,10 @@ st.markdown("### BAR REPRESENTATION FOR POSITION")
 POSITION = px.bar(df["position"], y= "position", title="POSITION PLAYED")
 st.plotly_chart(POSITION, use_container_width=True)
 
+POSITION = px.pie(df, names="position", title="POSITION PLAYED")
+# Display the pie chart
+st.plotly_chart(POSITION, use_container_width=True)
+
 st.markdown("### HISTOGRAM REPRESENTATION FOR DISTANCE COVERED")
 ABC = px.bar(df["distance_covered"], y ="distance_covered", title = "Pregnancies Distribution")
 st.plotly_chart(ABC, use_container_width = True)
@@ -115,9 +119,7 @@ st.markdown("### GOALS vs PLAYER NAME")
 df4 = pd.DataFrame(df["goals"],df["player_name"])
 st.write(df4)
 
-df = df.dropna(subset=['player_name', 'goals'])  # or
-df['player_name'] = df['player_name'].fillna("Unknown")
-st.write(df)
+
 
 
 
