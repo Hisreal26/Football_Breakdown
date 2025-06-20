@@ -97,8 +97,8 @@ st.markdown("### LINE GRAPH REPRESENTATION FOR ASSISTS")
 ASSIST = px.line(df["assists"], y ="assists", title = "Assist Contributions")
 st.plotly_chart(ASSIST, use_container_width = True)
 
-st.markdown("### BAR REPRESENTATION FOR ASSISTS")
-ASSIST = px.bar(df["assists"], y ="assists", title = "Assist Contributions")
+st.markdown("### HISTOGRAM REPRESENTATION FOR ASSISTS")
+ASSIST = px.histogram(df["assists"], y ="assists", title = "Assist Contributions")
 st.plotly_chart(ASSIST, use_container_width = True)
 
 
