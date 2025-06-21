@@ -120,6 +120,7 @@ st.markdown("### GOALS vs PLAYER NAME")
 df4 = pd.DataFrame(df["goals"],df["player_name"])
 st.write(df4)
 
+
 st.markdown("# PREDICTIVE ANALYSIS")
 X = df.drop("goals", axis=1)
 Y = df["goals"]
