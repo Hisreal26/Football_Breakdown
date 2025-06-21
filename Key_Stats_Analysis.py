@@ -93,6 +93,7 @@ POSITION = px.pie(df, names="position", title="POSITION PLAYED")
 # Display the pie chart
 st.plotly_chart(POSITION, use_container_width=True)
 
+
 st.markdown("### HISTOGRAM REPRESENTATION FOR DISTANCE COVERED")
 ABC = px.bar(df["distance_covered"], y ="distance_covered", title = "Pregnancies Distribution")
 st.plotly_chart(ABC, use_container_width = True)
